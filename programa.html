@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+    document.write("<h1>Seja bem-vindo </h1>")
+    document.write("clique abaixo:" +"<br>"+ "<a href='http://www.alura.com.br/'>Alura</a>")
+    document.write("<br>A idade do Flávio é <br>");
+    document.write(18 + 3) // tipo numero
+    document.write ("360" + "100") // concatenação
+    document.write("A soma das idades é :" + (20 + 10)); // se coloco os paratenses a operação de soma é feita antes da contatenação
+</script>
+<br>
+<br>
+<br>
+<script>
+    let ano = 2016
+    const nascimentoFlavio = 1977
+    const nascimentoJoaquim = 1996
+    const nascimentoBarney = 1976
+// declarando variavel
+    document.write("Flavio tem "+ (ano - nascimentoFlavio) + " anos" + "<br>");
+    document.write("Joaquim tem "+ (ano - nascimentoJoaquim) + " anos"+ "<br>");
+    document.write("Barney tem "+ (ano - nascimentoBarney) + " anos");
+// operações
+    const mediaIdade = (ano*3 - (nascimentoBarney + nascimentoFlavio + nascimentoBarney))/3
+    document.write(`A média da idade dos três é : ${mediaIdade} <br>`);
+    document.write("A média arrendodada é : " + Math.round(mediaIdade));
+
+
+</script>
