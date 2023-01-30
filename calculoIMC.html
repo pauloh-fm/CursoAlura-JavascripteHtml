@@ -27,6 +27,29 @@ let alturaInformada = prompt("Informe sua altura");
 let pesoInformado = prompt("Informe seu peso");
 
 let imc = calculaImc(alturaInformada, pesoInformado)
+
 mostra("seu imc calculado é : " + imc);
+pulaLinha();
+if(imc < 18.5) {
+
+mostra("Você está abaixo do recomendado");
+
+}
+pulaLinha();
+if(imc > 35) {
+
+mostra("Você está acima do recomendado");
+}
+
+pulaLinha();
+if(imc >= 18.5) {
+
+if(imc <= 35) {
+
+    mostra("Seu IMC está excelente!");
+
+}
+
+}
 
 </script>
