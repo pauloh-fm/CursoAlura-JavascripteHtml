@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<h1>CALCULO DE IMC</h1>
+<br>
+<i>Estudante : Paulo Henrique de Farias Martins</i>
+<br>
+<br>
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+    function calculaImc(altura, peso) {
+
+        return peso / (altura * altura);
+}
+let nomeInformado = prompt("Qual o seu nome?") // funcção prompt gera um alerta que recebe a entrada do usuário
+let alturaInformada = prompt("Informe sua altura");
+let pesoInformado = prompt("Informe seu peso");
+
+let imc = calculaImc(alturaInformada, pesoInformado)
+mostra("seu imc calculado é : " + imc);
+
+</script>
